@@ -29,6 +29,8 @@ app.use("/", require("./routes/root"));
 
 app.use("/users", require("./routes/userRoutes"));
 
+app.use("/notes", require("./routes/notesRoutes"));
+
 // 404 response
 app.all("*", (req, res) => {
   res.status = 404;
