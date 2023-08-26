@@ -95,7 +95,7 @@ const deleteUser = asyncHandler(async (req, res) => {
   const { id } = req.body;
 
   if (!id) {
-    return res.status(400).json({ message: "user ID Required" });
+    return res.status(400).json({ message: "User ID Required" });
   }
 
   // Confirm id is a valid ObjectId
